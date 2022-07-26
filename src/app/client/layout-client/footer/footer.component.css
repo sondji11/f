@@ -1,0 +1,14 @@
+.header{
+    background-color: #EB4E3D;
+    color:white;
+    height:15em ;
+
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 2em;    
+    padding-top: 2em;
+}
