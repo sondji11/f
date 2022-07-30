@@ -1,10 +1,5 @@
-.imgburger{
-    background-image: url(./imgburgers/epic-cheeseburger.jpg);
-    height:40em ;
-    width: 70em;
-    background-repeat: no-repeat;
-    /* margin-left:8em ;
-    margin-bottom:-4em; */
+li{
+    font-size: 1.5em;
 }
 .burger h3{
     display: flex;
@@ -19,18 +14,22 @@
     margin-left:30em;
 }
 
+
 .info{
     /* border: solid black 2px; */
-    width: 50em;
-    height:40em ;
-    justify-content: center;
+    width: 40em;
+    height:30em ;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding:2em ;
     align-items: center;
     margin-left: 2em;
      background-color: #EB4E3D;
    
     color: white;
     border-radius: 2em;
-    padding: 10em;
+
+    margin-bottom: 2em;
    
 
 
@@ -47,4 +46,24 @@
   margin-left: 20em;
 
 
+}
+.ajouter input{
+    background-color: white;
+    color: black;
+    width: 8em;
+}
+.cardb{
+   
+    background-color: #EB4E3D;
+    height:25rem ;
+    width: 60rem;
+    justify-content: center;
+    margin-left:28rem;
+    margin-bottom: 2rem;
+    
+}
+.cardb img{
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem;
 }

@@ -1,12 +1,13 @@
+import { CatalogueComponent } from './pages/catalogue/catalogue.component';
+import { NotFoundComponent } from '../not-found/not-found.component';
 import { DetailsComponent } from './pages/details/details.component';
-import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent},
-  {path: 'detail/:id', component: DetailsComponent}
+  {path:"",component:CatalogueComponent},
+  {path: 'detail/:id', component: DetailsComponent},
+
 ];
 
 @NgModule({

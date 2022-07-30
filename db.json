@@ -1,0 +1,46 @@
+{
+    "produits":[
+        {
+            "id":1,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        },
+        {
+            "id":2,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        },
+        {
+            "id":3,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        },
+        {
+            "id":4,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        },
+        {
+            "id":5,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        }
+
+    ,
+   
+        {
+            "id":1,
+            "nom": "kingburgers222333s22423243",
+            "image":"",
+            "prix": 2500
+        }]
+
+    
+
+    
+}

@@ -1,0 +1,14 @@
+
+<app-header></app-header>
+<div class="titreb"><h3>Burgers</h3>
+   </div> 
+<div class="container d-flex flex-wrap justify-content-evenly">
+    <app-card-client *ngFor="let produit of catalogue?.burgers" [produits]="produit"></app-card-client>
+</div>
+<div class="titreb"><h3>MenuBurgers</h3>
+</div> 
+<div class="container d-flex flex-wrap justify-content-evenly">
+    <app-card-client *ngFor="let produit of catalogue?.menus" [produits]="produit"></app-card-client>
+
+</div>
+<app-footer></app-footer>
