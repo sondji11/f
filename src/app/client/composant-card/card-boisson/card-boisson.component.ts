@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Produitsdetails } from 'src/app/shared/modelsdetails/produitsdetails';
+import { Component, Input, OnInit } from '@angular/core';
+import { Details } from 'src/app/shared/modelsdetails/details';
 
 @Component({
   selector: 'app-card-boisson',
@@ -6,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-boisson.component.css']
 })
 export class CardBoissonComponent implements OnInit {
+    @Input()Produitsdetails :Details|null=null
+
 
   constructor() { }
 

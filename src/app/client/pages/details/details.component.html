@@ -1,76 +1,13 @@
-<!-- <p>details works!</p> -->
+
+<!-- <app-footer></app-footer> --> 
 <app-header></app-header>
-<div class="burger">
-    <h3>Burgers</h3>
+<ng-container >
+    <app-card-details [Produitsdetails]="produitsdetails" ></app-card-details>
 
-</div>
-
-<div class="containerdetails">
-    <div class="mb-3">
-        <div class="card mb-3 box-sadow-border-box " style="width: 22rem;">
-            <img src="assets/imagecard/istockphoto-187914936-612x612.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-Nom burger text-align-center">Burger simple</h5>
-                <!-- <p>Prix:4000fcfa</p> -->
-              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-             
-                <!-- <a href="#" class="details">Details</a> -->
-                <a  class="details" >
-                    <!-- <button routerLink="/client/detail/{id}">Details</button> -->
-                </a>
-    
-            </div>
-          </div>
-        
-      </div>
-<!-- <div class="imgburger"></div> -->
-
-    <div class="info">
-        <h4>Composition</h4>
-        <ul>
-            <li>Nom</li>
-            <li>Ingredient</li>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti excepturi corrupti ratione aliquid est dolorum ipsum doloremque repellat iure quae fugit corporis, expedita deserunt alias ex facilis sed, tempore saepe!
-            <li>Prix</li>
-            5000fcfa
+<app-card-boisson></app-card-boisson>
 
 
-        </ul>
-        <div class="ajouter"> <input type="button" value="Ajouter"></div>
-
-    </div>
-
-    
-</div>
-
-
-    <div>
-        <div class="cardb">
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-            <input type="radio" name="" id="">
-            <img src="./assets/imagecard/boisson.jpeg" alt="" srcset="" input>
-
-
-
-        </div>  
-         
-
-
-  
-
-  </div>
-
-  
+</ng-container>
 <app-footer></app-footer>
+
+

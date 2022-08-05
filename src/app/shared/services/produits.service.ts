@@ -1,3 +1,4 @@
+import { Produits } from 'src/app/shared/models/produits';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
@@ -19,11 +20,13 @@ export class ProduitsService {
           return this.http.get<any>(this.url).pipe(
           map(
             data=>{
-                const catalogue:Catalogue={
+                let catalogue:Catalogue={
                   burgers:data["hydra:member"][0].burger,
-                  menus:data["hydra:member"][1].menu,
+                  menus:data["hydra:member"][1].menu
+                  // combiner:[...data["hydra:member"][0].menu,...data["hydra:member"][1]]
                  
                 }
+                
               return catalogue
       }
      )

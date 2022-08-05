@@ -1,44 +1,25 @@
-<!-- <p>card-client works!</p>
- <div class="container-class-wrap-to-wrap-justify-content-center-flex-wrap">
-
-    <div class="home">
-        <div class="img">
-        </div> 
-        <div class="info">
-            <div class="details">
-            <a ><button>Details</button></a>
-    
-    
-        </div>
-            <div class="prix">
-                <p>Prix:5000fcfa</p>
-    
-            </div>
-         </div>
-    
-    </div>
-    
-</div> 
 
 
- -->
  <div class="mb-3">
-    <!-- {{produits|json}} -->
     
     <div class="card mb-3 box-sadow-border-box " style="width: 22rem;">
         
         <img src="data:image/png;base64,{{produits?.image}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-Nom burger text-align-center">{{produits?.nom}}</h5>
-            <p>{{produits?.prix}}</p>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p> Prix: {{produits?.prix}} fcfa</p>
+          <p class="card-text">{{produits?.ingredient}}</p>
          
             <a  class="details" >
-                <button routerLink="/client/detail/{id}">Details</button>
+                <button routerLink="/client/detail/{{produits?.id}} ">Details</button>
             </a>
 
         </div>
       </div>
+
+
+
+      
     
   </div>
 

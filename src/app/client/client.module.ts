@@ -12,6 +12,7 @@ import { CardClientComponent } from './composant-card/card-client/card-client.co
 import { HeaderComponent } from './layout-client/header/header.component';
 import { CardBoissonComponent } from './composant-card/card-boisson/card-boisson.component';
 import { CatalogueComponent } from './pages/catalogue/catalogue.component';
+import { CardDetailsComponent } from './composant-card/card-details/card-details.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CatalogueComponent } from './pages/catalogue/catalogue.component';
     DetailsComponent,
     CardBoissonComponent,
     CatalogueComponent,
+    CardDetailsComponent,
   ],
   imports: [
     CommonModule,

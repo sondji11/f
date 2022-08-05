@@ -1,0 +1,43 @@
+ajouter input{
+    background-color: white;
+    color: black;
+    width: 8em;
+}
+.cardb{
+   
+    background-color: #EB4E3D;
+    height:40rem ;
+    width: 80rem;
+    justify-content: center;
+    margin-left:28rem;
+    margin-bottom: 2rem;
+    
+}
+.cardb img{
+    height: 4rem;
+    width: 4rem;
+    margin: 2rem;
+}
+
+.details button{
+    background-color: #EB4E3D;
+    color: white;
+    width:50% ;
+    height: 60%;
+    border-radius:25px;
+    font-size: 1.5em;
+}
+h6{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+}
+input{
+    width: 1.6em;
+    margin-left:0.7em
+}
+H5{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+}

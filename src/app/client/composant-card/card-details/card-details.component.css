@@ -1,0 +1,144 @@
+li{
+    font-size: 1.5em;
+}
+.burger h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:2px solid black;
+    border-radius: 2em;
+    width:10em ;
+    background-color:#EB4E3D;
+    color: white;
+    margin-left:30em;
+}
+
+
+.info{
+    /* border: solid black 2px; */
+    width: 40em;
+    height:30em ;
+    /* justify-content: center; */
+    /* text-align: center; */
+    padding:2em ;
+    align-items: center;
+    margin-left: 2em;
+     background-color: #EB4E3D;
+   
+    color: white;
+    border-radius: 2em;
+
+    margin-bottom: 2em;
+   
+
+
+}
+.containerdetails{
+  /* border: 2px solid black; */
+
+  width: 80em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-left: 20em;
+
+
+}
+.ajouter input{
+    background-color: white;
+    color: black;
+    width: 8em;
+}
+.complement{
+   
+    background-color: #EB4E3D;
+    height:40rem ;
+    width: 80rem;
+    /* justify-content: center; */
+    margin-left:28rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    
+}
+.cardb img{
+    height: 6rem;
+    width: 6rem;
+    margin: 2rem;
+    justify-content: center;
+    
+   
+    
+}
+
+.details button{
+    background-color: #EB4E3D;
+    color: white;
+    width:50% ;
+    height: 60%;
+    border-radius:25px;
+    font-size: 1.5em;
+}
+h6{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+}
+input{
+    width: 1.6em;
+    margin-left:0.7em
+}
+H5{
+    margin-left: 1rem;
+    padding-top: 1rem;
+    color: white;
+}
+.Frites{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.complement{
+    display: flex;
+    flex-direction:column;
+    border: solid 4px white;
+    border-radius: 2rem;
+}
+.cardb{
+    display: flex;
+    flex-direction: row;
+    /* border: solid 4px white;
+    border-radius: 2rem; */
+    /* justify-content: center; */
+
+}
+.fritee img{
+    height: 6rem;
+    width: 6rem;
+    margin: 2rem;
+    justify-content: center;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 1rem;
+    
+}
+.Frites{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.fritee{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 2.3rem;
+}
+/* .fritee input{
+    display: flex;
+    flex-direction: column;
+} */

@@ -1,0 +1,166 @@
+<div class="containerdetails">
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+    <div class="mb-3">
+        <div class="card mb-3 box-sadow-border-box " style="width: 22rem;">
+            <img src="data:image/png;base64,{{Produitsdetails?.produit.image}}" class="card-img-top" alt="...">
+
+
+
+
+            
+
+
+
+
+
+            <div class="card-body">
+              <h5 class="card-Nom burger text-align-center"> {{Produitsdetails?.produit.nom}}</h5>
+                <!-- <p>Prix:4000fcfa</p> -->
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+             
+                <!-- <a href="#" class="details">Details</a> -->
+                <a  class="details" >
+                    <!-- <button routerLink="/client/detail/{id}">Details</button> -->
+                </a>
+    
+            </div>
+          </div>
+        
+      </div>
+<!-- <div class="imgburger"></div> -->
+
+    <div class="info">
+        <h4>Composition</h4>
+        <ul>
+            <li>Nom : {{Produitsdetails?.produit.nom}}</li>
+            <li>Ingredient</li>
+            {{Produitsdetails?.produit.ingredient}}
+            <li>Prix</li>
+            {{Produitsdetails?.produit.prix}}
+
+        </ul>
+        <div class="ajouter"> <input type="button" value="Ajouter"></div>
+
+    </div>
+
+    
+</div>
+
+
+<div class="complement">
+     <div class="cardb">
+                <h6> Boissons : Cannettes</h6>
+                <ng-container *ngFor="let detailboisson of Produitsdetails?.boissons" >
+                            <div>
+                                <input type="checkbox" name="" id="">
+
+                                <img  src="data:image/png;base64,{{detailboisson.image}}" alt="" srcset="" input>
+                                <H6 > {{detailboisson.nom}}</H6>
+                             </div>
+                </ng-container>
+               
+     </div>         
+
+
+     <h5> Frites</h5>
+
+     <div class="Frites"> 
+        <ng-container *ngFor="let portionfrite of Produitsdetails.portionfrites " >
+            <div class="fritee"  >
+                <img src="data:image/png;base64,{{portionfrite.image}}" alt="" srcset="" input>
+                <div>
+                    <input type="checkbox" name="" id="">
+                </div>
+                <h6> Prix frites : {{portionfrite.prix}}</h6>
+                <h6>Nom : {{portionfrite.nom}}</h6>
+               
+                        
+                        
+             </div>
+                    
+
+        </ng-container>
+
+               
+
+
+
+
+
+
+
+</div>  
+
+
+
+  </div>
+
+  <div class="card-group">
+
+
+    <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+  
+      </div>
+        <div class="card-footer">
+          <small class="text-muted">portion</small>
+        </div>
+      </div>
+
+
+
+      <div class="card" >
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        </div>
+          <div class="card-footer">
+          <small class="text-muted">boisson</small>
+      </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">burgers</small>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+
+
+
+
+    
+
+         
+    
+
+
+  
+
+  

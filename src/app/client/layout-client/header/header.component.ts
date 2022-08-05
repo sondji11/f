@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { observable } from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -8,11 +9,18 @@ import { Component, OnInit } from '@angular/core';
 
 })
 export class HeaderComponent implements OnInit {
+    // @Input()reviews:any
+   @Output() clickchanged :EventEmitter<any> = new EventEmitter<any>();
+  
 
   constructor() { }
 
 
   ngOnInit(): void {
+  }
+  
+  filter(prod:string){
+    this.clickchanged.emit(prod)
   }
   
 }
