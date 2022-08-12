@@ -1,36 +1,16 @@
-<div class="containerdetails">
 
-
-
-
-
-
-
-
-
-
-
+<pre  >
     
+    <!-- {{Produitsdetails.produit.Menuportions|json}} -->
+    <!-- {{Produitsdetails.boisson[0].nom|json}} -->
 
-
-
-
-
-
+</pre>
+<div class="containerdetails">
 
 
     <div class="mb-3">
         <div class="card mb-3 box-sadow-border-box " style="width: 22rem;">
             <img src="data:image/png;base64,{{Produitsdetails?.produit.image}}" class="card-img-top" alt="...">
-
-
-
-
-            
-
-
-
-
 
             <div class="card-body">
               <h5 class="card-Nom burger text-align-center"> {{Produitsdetails?.produit.nom}}</h5>
@@ -49,17 +29,92 @@
 <!-- <div class="imgburger"></div> -->
 
     <div class="info">
-        <h4>Composition</h4>
-        <ul>
-            <li>Nom : {{Produitsdetails?.produit.nom}}</li>
-            <li>Ingredient</li>
-            {{Produitsdetails?.produit.ingredient}}
-            <li>Prix</li>
-            {{Produitsdetails?.produit.prix}}
+        <div>
+            <h4>Composition</h4>
 
-        </ul>
-        <div class="ajouter"> <input type="button" value="Ajouter"></div>
+            <ul>
+                <li>Nom : {{Produitsdetails?.produit.nom}}</li>
+                <li>Ingredient</li>
+                {{Produitsdetails?.produit.ingredient}}
+                <li>Prix</li>
+                {{Produitsdetails?.produit.prix}}
+    
+            </ul>
+            <div class="ajouter"> <input type="button" value="Ajouter" (click)="ajoutpanier(Produitsdetails.produit) " ></div>
 
+        </div>
+
+        <div>
+
+            
+        </div>
+        <ng-container *ngFor="let menuburger of Produitsdetails.produit.menuburgers">
+            <div class="card" style="width: 18rem; color:black">
+                <img src="data:image/png;base64,{{menuburger.burger?.image}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p>Nom burger: {{menuburger.burger?.nom}}</p>
+                <p>Prix :{{menuburger.burger?.prix}} fcfa </p>
+                <p></p>
+                <span> Quantite burgers: {{menuburger.quantiterburger}} </span>
+                </div>
+            </div>
+
+
+            
+
+
+
+        </ng-container>
+        <!-- <p>{{Produitsdetails.produit.burger.nom}</p> -->
+
+<ng-container *ngFor="let menutaille of Produitsdetails.produit.menuTailles" >
+
+   
+    <div class="card" style="width: 18rem; color:black">
+        <!-- <img src="ata:image/png;base64,{{menutaille.?.image}}" class="card-img-top" alt="..."> -->
+        <div class="card-body">
+        <span> Quantite de Boissons : {{menutaille?.quantitetaille}} </span> <br> 
+        <span> Prix : {{menutaille?.taille.prix}} fcfa </span>   <br>
+        <span> type de boisson : {{menutaille?.taille.libelle}} </span>   
+        <!-- <span> les differentes cannettes : {{menutaille?.taille.boissonTailles.nom}} </span>  
+        
+        -->
+        <ng-container *ngFor="let boissonnom of Produitsdetails.produit" >
+            <span> les differentes cannettes :{{boissonnom.boisson.nom}} </span>
+
+        </ng-container>
+
+
+
+        </div>
+     </div>
+
+</ng-container >
+
+<ng-container *ngFor="let portionfrit of Produitsdetails.produit.Menuportions">
+
+
+    <div class="card" style="width: 18rem; color:black" (scroll)="3">
+        <img src="data:image/png;base64,{{portionfrit.portionfrite.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+        <!-- <h5 class="card-title">Card title</h5> -->
+        <span> Nom frite du MENU : {{portionfrit.portionfrite.nom}} </span> <br>
+        <span> Quantiter de frite du menu : {{portionfrit.quantitefrite}} </span> <br>
+        <span> Prix : {{portionfrit.portionfrite.prix}} fcfa </span> 
+
+        </div>
+      </div>
+
+
+</ng-container>
+           
+
+
+
+           
+
+       
     </div>
 
     
@@ -114,43 +169,13 @@
 
   </div>
 
-  <div class="card-group">
-
-
-    <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-  
-      </div>
-        <div class="card-footer">
-          <small class="text-muted">portion</small>
-        </div>
-      </div>
-
-
-
-      <div class="card" >
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-        </div>
-          <div class="card-footer">
-          <small class="text-muted">boisson</small>
-      </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src="..." alt="Card image cap">
-        <div class="card-body">
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">burgers</small>
-        </div>
-      </div>
+ 
 
 
 
 
 
-    </div>
+
 
 
 

@@ -2,7 +2,7 @@ import { Produits } from 'src/app/shared/models/produits';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/internal/Observable';
-import { pipe,map ,tap} from "rxjs";
+import { pipe,map ,tap, BehaviorSubject} from "rxjs";
 import { Catalogue } from '../models/catalogue';
 
 
@@ -22,8 +22,8 @@ export class ProduitsService {
             data=>{
                 let catalogue:Catalogue={
                   burgers:data["hydra:member"][0].burger,
-                  menus:data["hydra:member"][1].menu
-                  // combiner:[...data["hydra:member"][0].menu,...data["hydra:member"][1]]
+                  menus:data["hydra:member"][1].menu,
+                  combiner: [...data["hydra:member"][0].burger,...data["hydra:member"][1].menu],
                  
                 }
                 
@@ -36,4 +36,16 @@ export class ProduitsService {
   produits$ = (id:number) => {
     return this.http.get<Catalogue>(`${this.url}/${id}`)
   }
+
+  
+
+  private messageSource = new BehaviorSubject('default message');
+  currentMessage = this.messageSource.asObservable();
+
+
+
+  changeMessage(message:string) {
+    this.messageSource.next(message)
+  }
+
 }

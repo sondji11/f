@@ -1,3 +1,5 @@
+import { PanierService } from 'src/app/shared/services/panier.service';
+import { PanierComponent } from './../../pages/panier/panier.component';
 import { Produitsdetails } from 'src/app/shared/modelsdetails/produitsdetails';
 import { Component, Input, OnInit, Output } from '@angular/core';
 import { Produits } from 'src/app/shared/models/produits';
@@ -12,10 +14,16 @@ export class CardDetailsComponent implements OnInit {
   
 
 
-  constructor() { }
+  constructor(private PanierService:PanierService) { }
 
   ngOnInit(): void {
   }
+
+  ajoutpanier( ajout:Produitsdetails)
+  {
+    this.PanierService.addToCart(ajout)
+  }
+  
 
 }
 

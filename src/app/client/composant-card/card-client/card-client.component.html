@@ -1,18 +1,23 @@
 
-
  <div class="mb-3">
     
     <div class="card mb-3 box-sadow-border-box " style="width: 22rem;">
         
-        <img src="data:image/png;base64,{{produits?.image}}" class="card-img-top" alt="...">
+        <img src="data:image/png;base64,{{produits.image}}" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-Nom burger text-align-center">{{produits?.nom}}</h5>
-            <p> Prix: {{produits?.prix}} fcfa</p>
-          <p class="card-text">{{produits?.ingredient}}</p>
+          <h5 class="card-Nom burger text-align-center">{{produits.nom}}</h5>
+            <p> Prix: {{produits.prix}} fcfa</p>
+          <p class="card-text">{{produits.ingredient}}</p>
          
             <a  class="details" >
-                <button routerLink="/client/detail/{{produits?.id}} ">Details</button>
+                <button routerLink="/client/detail/{{produits.id}} ">Details</button>
+                
             </a>
+              <button (click)="ajoutpanier(produits)">ajouter</button>
+              <!-- <button (click)="changeMessage()">dd</button> -->
+
+
+
 
         </div>
       </div>

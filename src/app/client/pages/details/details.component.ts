@@ -5,6 +5,8 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { DetailsService } from 'src/app/shared/services/details.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { PanierService } from 'src/app/shared/services/panier.service';
+import { Produits } from 'src/app/shared/models/produits';
 
 
 @Component({
@@ -21,7 +23,7 @@ export class DetailsComponent implements OnInit {
   
   Details:any|null=null;
   sonn:Observable<any>|null=null
-  constructor( private servProduits:DetailsService,private router:ActivatedRoute) { }
+  constructor( private servProduits:DetailsService,private router:ActivatedRoute,private produits:PanierService) { }
 
   ngOnInit(): void {
 
@@ -38,6 +40,13 @@ export class DetailsComponent implements OnInit {
     // .subscribe(data =>this.produitsdetails=data)
       // console.log(this.produitsdetails);
 
+
+
   }
 
+  ajoutpanier( ajout:Produits)
+  {
+    this.produits.addToCart(ajout)
+  }
+  
 }
